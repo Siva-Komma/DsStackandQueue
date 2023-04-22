@@ -19,6 +19,23 @@ namespace StackandQueue
             newnode.Next = top;
             top = newnode;
         }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            Console.WriteLine("Item popped is {0}", top.data);
+            top = top.Next;
+        }
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            Console.WriteLine("{0} is top os the stack", top.data);
+        }
         public void Display()
         {
             if(top==null)

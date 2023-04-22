@@ -23,8 +23,8 @@ namespace StackandQueue
             {
                 rear.Next = newnode;
                 rear= rear.Next;
-
             }
+            Console.WriteLine("{0} node added to Queue", data);
         }
         public void Dequeue()
         {

@@ -12,16 +12,18 @@ namespace StackandQueue
         {
             Console.WriteLine("Stack and Queue");
             ExStack ex = new ExStack();
-            ex.push(20);
-            ex.push(40);
+            ex.push(56);
             ex.push(30);
+            ex.push(70);
+            ex.Pop();
+            ex.Peek();
             ex.Display();
             ExQueue eq = new ExQueue();
-            eq.Enqueue(20);
+            eq.Enqueue(56);
             eq.Enqueue(30);
-            eq.Enqueue(40);
+            eq.Enqueue(70);
             eq.Dequeue();
-            ex.Display();
+            eq.Display();
             Console.ReadLine();
         }
     }
